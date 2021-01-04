@@ -1,11 +1,9 @@
-import { Router } from "react-router-dom";
-import Home from "./route/Home";
-import About from "./route/About";
+import CounterContainer from "./containers/CounterContainer";
+
 function App() {
   return (
     <div>
-      <Router path="/" component={Home} />
-      <Router paht="/about" component={About} />
+      <CounterContainer />
     </div>
   );
 }
