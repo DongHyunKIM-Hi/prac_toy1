@@ -1,11 +1,11 @@
-import Context from "./Components/Context";
-import Header from "./Components/Header";
-
+import { Router } from "react-router-dom";
+import Home from "./route/Home";
+import About from "./route/About";
 function App() {
   return (
     <div>
-      <Header />
-      <Context />
+      <Router path="/" component={Home} />
+      <Router paht="/about" component={About} />
     </div>
   );
 }
